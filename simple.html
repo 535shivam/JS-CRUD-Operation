@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee</title>
+    <link rel="stylesheet" href="css/simple.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="header">
+    <h4>Employee Details</h4>
+    </div>
+
+    <div class="upper-btn-box">
+        <div class="leftbox">
+            <button id="btnAdd"><i class="fa fa-plus"></i> &nbsp; Add Employee</button>
+            <button id="btnClear"><i class="fa fa-eraser"></i>&nbsp; Delete All Data</button>
+            <input type="checkbox" id="delAllData" name="">
+        </div>
+        <div class="rightbox">
+            <i class="fa fa-search" style="color: #33B5E6; font-size: 20px; padding: 4px; background-color: #33B5E6; color: white;"></i>
+            <input type="text" id="empID" placeholder="Enter Your id...">
+            <button class="btnSearch">Search</button>
+        </div>
+    </div>
+
+    <!-- Table View Data -->
+
+    <div class="tableBox">
+        <table>
+            <tr>
+                <th>Sr No.</th>
+                <th>Employee ID</th>
+                <th>Profile Photo</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Gender</th>
+                <th>Email</th>
+                <th>Mobile No.</th>
+                <th>City</th>
+                <th>Job Title</th>
+                <th>Pin Code</th>
+                <th>Action</th>
+            </tr>
+            
+            <!-- <tr>
+                <td>1010</td>
+                <td>Shivam Singh</td>
+                <td>Shivam Singh</td>
+                <td>Shivam Singh</td>
+                <td>Shivam Singh</td>
+                <td>Shivam Singh</td>
+                <td>Shivam Singh</td>
+                <td>Shivam Singh</td>
+                <td>Shivam Singh</td>
+                <td>Shivam Singh</td>
+                <td>
+                    <button class="btnEye"><i class="fa fa-eye" style="font-size: 15px; "></i></button>
+                    <button class="btnTrash"><i class="fa fa-trash" style="font-size: 15px; "></i></button>
+                </td>
+            </tr> -->
+            <tbody id="table-Data">
+
+            </tbody>
+        </table>
+    </div>
+
+
+    <!--          Second Page (New Entry of employee)           -->
+
+
+
+      <div class="model">
+        <i class="fa fa-times-circle close-icon"></i>
+        <div class="leftSide">
+            <div class="imageBox">
+                <img src="img/profileImage.jpeg" id="profile-pic" width="150"  height="150">
+                <i class="fa fa-plus"></i>
+                <input type="file" id="upload-field">
+            </div>
+        </div>
+
+        <div class="rightSide">
+            <form id="registrationForm">
+                <div class="newEntryBox">
+                    <label for="id">Employee ID</label>
+                    <input type="text" required id="id">
+                </div>
+    
+                <div class="newEntryBox">
+                    <label for="firstName">First Name</label>
+                    <input type="text" required id="firstName">
+                </div>
+    
+                <div class="newEntryBox">
+                    <label for="secondName">Last Name</label>
+                    <input type="text" required id="lastName">
+                </div>
+    
+                <div class="newEntryBox">
+                    <label for="gender">Gender</label>
+                    <input type="text" required id="gender">
+                </div>
+    
+                <div class="newEntryBox">
+                    <label for="email">Email</label>
+                    <input type="text" required id="email">
+                </div>
+
+                <div class="newEntryBox">
+                    <label for="mobileNNo">Mobile No.</label>
+                    <input type="text" required id="mobile_No">
+                </div>
+    
+                <div class="newEntryBox">
+                    <label for="city">City</label>
+                    <input type="text" required id="location">
+                </div>
+    
+                <div class="newEntryBox">
+                    <label for="jobTitle">Job Title</label>
+                    <input type="text" required id="jobTitle">
+                </div>
+    
+                <div class="newEntryBox">
+                    <label for="pinCode">Pin Code</label>
+                    <input type="text" required id="pinCode">
+                </div>
+                
+                <div class="newEntryBox">
+                    <button id="register-btn">Register</button>
+                    <button id="update-btn"  disabled="disabled" style="background-color: rgb(238, 72, 72);">Edit</button>
+                </div>
+            </form>
+        </div>
+      </div> 
+      
+      
+<script src="js/simple.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</body>
+</html>
